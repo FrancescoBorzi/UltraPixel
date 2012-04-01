@@ -1,0 +1,5 @@
+Per applicare la patch anti-IE basta caricare il file header.php
+allegato a questo archivio nella cartella del tema UltraPixel su
+cui si vuole applicare la patch.
+
+-- Patch scripted by Shin Darth - http://ultrapixel.altervista.org/

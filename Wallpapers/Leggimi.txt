@@ -1,0 +1,8 @@
+All'interno di questa cartella si trovano diversi sfondi per
+UltraPixel, ottime alternative allo sfondo classico ereditato da pixel.
+Per installarli basta scomprimere il file "bgbody.jpg" dall'archivio
+dello sfondo che si vuole installare e caricarlo nella cartella
+/images/ del tema UltraPixel su cui si vuole installare lo sfondo scelto,
+sostituendolo a quello corrente.
+
+-- Backgrounds designed by Kalhac - http://ultrapixel.altervista.org/
