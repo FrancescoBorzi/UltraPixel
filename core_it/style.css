@@ -52,8 +52,10 @@ h1, h2, h3, h4, h5, h6 {
 
 hr {
 
-  color: rgb(35,200,220); 
-
+  background-color: lightblue;
+  
+  height: 3px;
+  
   border: 1px solid #121212;
 
   }
