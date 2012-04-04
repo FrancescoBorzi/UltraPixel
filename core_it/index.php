@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-
-<div id="main">
+<script src="smoothscroll.js" type="text/javascript"></script>
+<a name="main"><div id="main">
 
 <div id="contentwrapper">
 
@@ -40,7 +40,7 @@
 <?php get_sidebar(); ?>
 <div class="cleared"></div>
 
-</div><!-- Closes Main -->
+</div><!-- Closes Main --></a>
 
 
 <?php get_footer(); ?>
