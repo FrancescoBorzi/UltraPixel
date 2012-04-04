@@ -53,8 +53,10 @@ h1, h2, h3, h4, h5, h6 {
 
 hr {
 
-  color: #333;
-
+  background-color: red;
+  
+  height: 3px;
+  
   border: 1px solid #121212;
 
   }
