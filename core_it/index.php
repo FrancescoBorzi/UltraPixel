@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<script src="smoothscroll.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/smoothscroll.js" type="text/javascript"></script>
 <a name="main"><div id="main">
 
 <div id="contentwrapper">
