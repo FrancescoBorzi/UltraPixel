@@ -29,10 +29,10 @@
 <div class="topPost">
   <h2 class="topTitle"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
   <p class="topMeta">by <?php the_author_posts_link(); ?> on <?php the_time('M.d, Y') ?>, under <?php the_category(', '); ?></p>
-  <div class="topContent"><?php the_content('(continua a leggere...)'); ?></div>
+  <div class="topContent"><?php the_content('(Continua a leggere...)'); ?></div>
   <span class="topComments"><?php comments_popup_link('Lascia un commento', '1 Commento', '% Commenti'); ?></span>
   <span class="topTags"><?php the_tags('<em>:</em>', ', ', ''); ?></span>
-  <span class="topMore"><a href="<?php the_permalink() ?>">more...</a></span>
+  <span class="topMore"><a href="<?php the_permalink() ?>">Continua a leggere...</a></span>
 <div class="cleared"></div>
 </div> <!-- Closes topPost --><br/>
 
