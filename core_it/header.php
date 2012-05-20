@@ -69,7 +69,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
   <?php wp_register(); ?>
   <li><?php wp_loginout(); ?></li>
   <?php wp_meta(); ?>
-  <li><a target="_blank_" href="http://ultrapixel.altervista.org/">UltraPixel WebSite</a></li>
+  <li><a target="_blank_" href="http://shinworld.altervista.org/wordpress/?p=716">download UltraPixel</a></li>
   <li><a href="#main">skip to content &darr;</a></li>
 </ul>
 </div>
