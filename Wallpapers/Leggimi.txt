@@ -5,4 +5,12 @@ dello sfondo che si vuole installare e caricarlo nella cartella
 /images/ del tema UltraPixel su cui si vuole installare lo sfondo scelto,
 sostituendolo a quello corrente.
 
--- Backgrounds designed by Kalhac - http://ultrapixel.altervista.org/
+Abbinamenti consigliati:
+
+- GreenNight con sfondo Moonsky
+- OrangeJuice con sfondo Fire
+- RedHot con sfondo Violet
+- SimpleWhite con sfondo Thunder
+
+
+-- Backgrounds designed by Kalhac & Helias - http://shinworld.altervista.org/
