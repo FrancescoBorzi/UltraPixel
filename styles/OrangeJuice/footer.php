@@ -18,7 +18,7 @@ else
 
 <div id="footer">
 <div id="footerleft">
-<p>Powered by <a href="http://www.wordpress.org/">WordPress</a>. Theme <a href="http://ultrapixel.altervista.org/">UltraPixel</a> <font color="orange">Orange Juice</font> 2.3<font color="orange">.0</font> designed by <a href="http://shinworld.altervista.org/"><font color="yellow">Shin Darth</font></a>.
+<p>Powered by <a href="http://www.wordpress.org/">WordPress</a>. Theme <a href="http://ultrapixel.altervista.org/">UltraPixel</a> <font color="orange">Orange Juice</font> 2.4<font color="orange">.1</font> designed by <a href="http://shinworld.altervista.org/"><font color="yellow">Shin Darth</font></a>.
 <!-- Numerose persone hanno lavorato gratuitamente per lo sviluppo di WordPress, pixel e UltraPixel. Per favore non rimuovere i crediti.-->
 </div>
 
