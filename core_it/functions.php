@@ -7,42 +7,6 @@ if ( function_exists('register_sidebar') )
         'before_title' => '<h2 class="widgettitle">',
         'after_title' => '</h2>',
     ));
-    register_sidebar(array(
-	'name'=>'sidebar_left',
-        'before_widget' => '<li id="%1$s" class="sidebaritem %2$s"><div class="sidebarbox">',
-        'after_widget' => '</div></li>',
-        'before_title' => '<h2 class="widgettitle">',
-        'after_title' => '</h2>',
-    ));
-    register_sidebar(array(
-	'name'=>'sidebar_right',
-        'before_widget' => '<li id="%1$s" class="sidebaritem %2$s"><div class="sidebarbox">',
-        'after_widget' => '</div></li>',
-        'before_title' => '<h2 class="widgettitle">',
-        'after_title' => '</h2>',
-    ));
-    register_sidebar(array(
-	'name'=>'footer_left',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-    ));
-    register_sidebar(array(
-	'name'=>'footer_middle',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-    ));
-    register_sidebar(array(
-	'name'=>'footer_right',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-    ));
-
 
 add_action('admin_menu', 'add_welcome_interface');
 
