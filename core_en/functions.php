@@ -56,15 +56,15 @@ function editoptions() {
   <h2>Theme Options</h2>
   <form method="post" action="options.php">
   <?php wp_nonce_field('update-options') ?>
-  <p><strong>Titolo del messaggio di benvenuto:</strong></p>
+  <p><strong>Title of welcome message:</strong></p>
   <p><input type="text" name="greeting" value="<?php echo get_option('greeting'); ?>" /></p>
-  <p><strong>Messaggio di benvenuto:</strong></p>
+  <p><strong>Welcome message:</strong></p>
   <p><textarea name="welcomemessage" cols="100%" rows="10"><?php echo get_option('welcomemessage'); ?></textarea></p>
   <p><strong>Footbar:</strong></p>
   <p><textarea name="footbar" cols="100%" rows="10"><?php echo get_option('footbar'); ?></textarea></p>
-  <p><strong>Per favore inserisci qui sotto il nome del tuo feed FeedBurner: </strong></p>
+  <p><strong>Insert the name of your feed FeedBurner: </strong></p>
   <p><input type="text" name="feedname" value="<?php echo get_option('feedname'); ?>" /></p>
-  <p><input type="submit" name="Submit" value="Aggiorna Opzioni" /></p>
+  <p><input type="submit" name="Submit" value="Update settings" /></p>
   <input type="hidden" name="action" value="update" />
   <input type="hidden" name="page_options" value="feedname,greeting,welcomemessage,footbar" />
   </form>
@@ -84,7 +84,7 @@ function mytheme_comment($comment, $args, $depth) {
 			<div class="commentbody">
 			<cite><?php comment_author_link() ?></cite> 
 			<?php if ($comment->comment_approved == '0') : ?>
-			<em>Il tuo commento è in attesa di approvazione.</em>
+			<em>Your comment is awaiting moderation.</em>
 			<?php endif; ?>
 			<br />
 			<small class="commentmetadata"><a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> on <?php comment_time() ?></a> <?php edit_comment_link('edit','&nbsp;&nbsp;',''); ?></small>
@@ -108,7 +108,7 @@ function mytheme_ping($comment, $args, $depth) {
 			<div class="commentbody">
 			<cite><?php comment_author_link() ?></cite> 
 			<?php if ($comment->comment_approved == '0') : ?>
-			<em>Il tuo commento è in attesa di approvazione.</em>
+			<em>Your comment is awaiting moderation.</em>
 			<?php endif; ?>
 			<br />
 			<small class="commentmetadata"><a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> on <?php comment_time() ?></a> <?php edit_comment_link('edit','&nbsp;&nbsp;',''); ?></small>

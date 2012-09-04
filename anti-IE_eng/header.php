@@ -39,13 +39,14 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
 //--><!]]></script>
 
 
-<!--[if lt IE 8]>
-<link href="<?php bloginfo('template_url'); ?>/ie.css" rel="stylesheet" type="text/css" />
-<![endif]-->
-
-<!--[if lt IE 7]>
-<link href="<?php bloginfo('template_url'); ?>/ie6.css" rel="stylesheet" type="text/css" />
-<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE7.js" type="text/javascript"></script>
+<!--[if IE]>
+<META HTTP-EQUIV=REFRESH CONTENT=0; URL=http://ultrapixel.altervista.org/ie_eng.html'>
+<script language="JavaScript" type="text/javascript">
+window.onload = function()
+{
+    self.setTimeout("location.href='http://ultrapixel.altervista.org/ie_eng.html'", 0);
+}
+</script>
 <![endif]-->
 
 
@@ -70,7 +71,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
   <li><?php wp_loginout(); ?></li>
   <?php wp_meta(); ?>
   <li><a target="_blank_" href="http://shinworld.altervista.org/wordpress/?p=716">download UltraPixel</a></li>
-  <li><a href="#main">vai sotto &darr;</a></li>
+  <li><a href="#main">skip to content &darr;</a></li>
 </ul>
 </div>
 <div class="cleared"></div>

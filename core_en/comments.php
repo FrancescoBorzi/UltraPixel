@@ -26,7 +26,7 @@ if ( have_comments() ) : ?>
 
 	<?php if ( ! empty($comments_by_type['comment']) ) :
 	$count = count($comments_by_type['comment']);
-	($count !== 1) ? $txt = "Commenti per questo articolo" : $txt = "Commento per questo articolo"; ?>
+	($count !== 1) ? $txt = "Comments" : $txt = "Comment"; ?>
 	<h3 id="commentstitle"><?php echo $count . " " . $txt; ?></h3>
 	<ul class="commentlist">
 		<?php wp_list_comments('type=comment&callback=mytheme_comment'); ?>
@@ -164,7 +164,7 @@ if (function_exists('get_avatar')) {
 
 <!--<p><small><strong>XHTML:</strong> You can use these tags: <?php echo allowed_tags(); ?></small></p>-->
 <p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
-<p><input name="submit" type="submit" id="submit" class="submitbutton" tabindex="5" value="Pubblica commento" />
+<p><input name="submit" type="submit" id="submit" class="submitbutton" tabindex="5" value="Insert comment" />
 <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
 </p>
 

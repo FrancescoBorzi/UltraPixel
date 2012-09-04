@@ -19,11 +19,11 @@ else
 <div id="footer">
 <div id="footerleft">
 <p>Powered by <a href="http://www.wordpress.org/">WordPress</a>. Theme <a href="http://ultrapixel.altervista.org/">UltraPixel</a> <font color="green">Green Night</font> 2.3<font color="green">.0</font> designed by <a href="http://shinworld.altervista.org/"><font color="lightblue">Shin Darth</font></a>.
-<!-- Numerose persone hanno lavorato gratuitamente per lo sviluppo di WordPress, pixel e UltraPixel. Per favore non rimuovere i crediti.-->
+<!-- We worked free to develop WordPress, pixel and UltraPixel. Please do not remove credis.-->
 </div>
 
 <div id="footerright">
- <a href="#main">torna sopra &uarr;</a></p>
+ <a href="#main">Back to top &uarr;</a></p>
 </div>
 
 <div class="cleared"></div>
