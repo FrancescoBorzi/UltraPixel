@@ -23,7 +23,7 @@ else
 </div>
 
 <div id="footerright">
- <a href="#main">Back to top &uarr;</a></p>
+ <a href="#main">torna sopra &uarr;</a></p>
 </div>
 
 <div class="cleared"></div>
