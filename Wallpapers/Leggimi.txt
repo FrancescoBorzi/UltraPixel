@@ -1,16 +1,9 @@
 All'interno di questa cartella si trovano diversi sfondi per
-UltraPixel, ottime alternative allo sfondo classico ereditato da pixel.
+UltraPixel.
 Per installarli basta scomprimere il file "bgbody.jpg" dall'archivio
 dello sfondo che si vuole installare e caricarlo nella cartella
 /images/ del tema UltraPixel su cui si vuole installare lo sfondo scelto,
 sostituendolo a quello corrente.
-
-Abbinamenti consigliati:
-
-- GreenNight con sfondo Moonsky
-- OrangeJuice con sfondo Fire
-- RedHot con sfondo Violet
-- SimpleWhite con sfondo Thunder
 
 
 -- Backgrounds designed by Kalhac & Helias - http://shinworld.altervista.org/
