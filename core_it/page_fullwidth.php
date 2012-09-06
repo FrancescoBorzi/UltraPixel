@@ -25,9 +25,9 @@ Template Name: Page Full Width
 <?php else : ?>
 
 <div class="topPost">
-  <h2 class="topTitle"><a href="<?php the_permalink() ?>">Not Found</a></h2>
-  <div class="topContent"><p>Non è stato trovato niente riguardo a ciò che hai cercato. Puoi rieffettuare la ricerca usando <a href="#searchform">questo form</a>...</p></div>
-</div> <!-- Closes topPost -->
+  <h2 class="topTitle"><a href="<?php the_permalink() ?>">Oggetto non trovato</a></h2>
+  <div class="topContent"><p>Puoi rieffettuare la ricerca usando <a href="#searchform">questo form</a>...</p></div>
+</div><!-- Closes topPost -->
 
 <?php endif; ?>
 

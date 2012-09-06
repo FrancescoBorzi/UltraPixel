@@ -41,7 +41,7 @@
 <?php else : ?>
 
 <div class="topPost">
-  <h2 class="topTitle"><a href="<?php the_permalink() ?>">Elemento non trovato</a></h2>
+  <h2 class="topTitle"><a href="<?php the_permalink() ?>">Oggetto non trovato</a></h2>
   <div class="topContent"><p>Puoi rieffettuare la ricerca usando <a href="#searchform">questo form</a>...</p></div>
 </div> <!-- Closes topPost -->
 
