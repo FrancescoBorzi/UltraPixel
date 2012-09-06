@@ -20,9 +20,10 @@ function editoptions() {
   <h2>Theme Options</h2>
   <form method="post" action="options.php">
   <?php wp_nonce_field('update-options') ?>
-  <p><strong>Titolo del messaggio di benvenuto:</strong></p>
+  <p><strong>Titolo del messaggio di benvenuto:<br>(scrivi "disable" tutto in minuscolo per disabilitare il messaggio di benvenuto)</strong></p>
   <p><input type="text" name="greeting" value="<?php echo get_option('greeting'); ?>" /></p>
-  <p><strong>Messaggio di benvenuto:</strong></p>
+  <p><strong>Messaggio di benvenuto:<br>
+  (supporta anche il codice HTML)</strong></p>
   <p><textarea name="welcomemessage" cols="100%" rows="10"><?php echo get_option('welcomemessage'); ?></textarea></p>
   <p><strong>Footbar:</strong></p>
   <p><textarea name="footbar" cols="100%" rows="10"><?php echo get_option('footbar'); ?></textarea></p>

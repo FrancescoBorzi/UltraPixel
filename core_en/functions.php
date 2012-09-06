@@ -20,6 +20,7 @@ function editoptions() {
   <h2>Theme Options</h2>
   <form method="post" action="options.php">
   <?php wp_nonce_field('update-options') ?>
+  <p><strong>- Both welcome message andfootbar support HTML code.<br>- To disable the welcome message insert "disable" (in lowcase) as title.</strong></p>
   <p><strong>Title of welcome message:</strong></p>
   <p><input type="text" name="greeting" value="<?php echo get_option('greeting'); ?>" /></p>
   <p><strong>Welcome message:</strong></p>
@@ -31,6 +32,7 @@ function editoptions() {
   <p><input type="submit" name="Submit" value="Update settings" /></p>
   <input type="hidden" name="action" value="update" />
   <input type="hidden" name="page_options" value="feedname,greeting,welcomemessage,footbar" />
+  <p align="center">Theme UltraPixel coded by <a href="http://shinworld.altervista.org/"><strong>ShinDarth & Helias</strong></p>
   </form>
   </div>
   <?php
