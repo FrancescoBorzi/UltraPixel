@@ -6,18 +6,18 @@
 $mysitename = get_bloginfo('name');
 if (get_option('greeting') || get_option('welcomemessage'))
 {
-	if (get_option('greeting'))
-	{
-    		echo "<h2><center>" . get_option('greeting') . "</center></h2>";
-    	}
-  	if (get_option('welcomemessage'))
-  	{
-    		echo "<p>" . get_option('welcomemessage') . "</p>";
-    	}
+if (get_option('greeting'))
+{
+     echo "<h2><center>" . get_option('greeting') . "</center></h2>";
+     }
+   if (get_option('welcomemessage'))
+   {
+     echo "<p>" . get_option('welcomemessage') . "</p>";
+     }
 }
 else
 {
- 	echo "<center><h2>Benvenuto su $mysitename!</h2></center>
+  echo "<center><h2>Benvenuto su $mysitename!</h2></center>
 <p>Questo è il riquadro di benvenuto del tema <b>UltraPixel</b>, se leggi questo testo significa che hai appena installato il tema.<br><br>
 
 - Puoi aggiungere elementi alla barra laterale dal <a href='./wp-admin/widgets.php'>menù dei widgets</a> nel pannello di controllo.<br><br>
