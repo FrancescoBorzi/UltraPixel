@@ -4,8 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>"  />
-<title><?php if (is_home () ) { bloginfo('name'); echo " - "; bloginfo('description'); 
+<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+<title><?php if (is_home () ) { bloginfo('name'); echo " - "; bloginfo('description');
 } elseif (is_category() ) {single_cat_title(); echo " - "; bloginfo('name');
 } elseif (is_single() || is_page() ) {single_post_title(); echo " - "; bloginfo('name');
 } elseif (is_search() ) {bloginfo('name'); echo " search results: "; echo wp_specialchars($s);
@@ -22,17 +22,17 @@
 
 <script type="text/javascript"><!--//--><![CDATA[//><!--
 sfHover = function() {
-	if (!document.getElementsByTagName) return false;
-	var sfEls = document.getElementById("nav").getElementsByTagName("li");
+if (!document.getElementsByTagName) return false;
+var sfEls = document.getElementById("nav").getElementsByTagName("li");
 
-	for (var i=0; i<sfEls.length; i++) {
-		sfEls[i].onmouseover=function() {
-			this.className+=" sfhover";
-		}
-		sfEls[i].onmouseout=function() {
-			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
-		}
-	}
+for (var i=0; i<sfEls.length; i++) {
+sfEls[i].onmouseover=function() {
+this.className+=" sfhover";
+}
+sfEls[i].onmouseout=function() {
+this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+}
+}
 
 }
 if (window.attachEvent) window.attachEvent("onload", sfHover);
@@ -65,13 +65,14 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
 
 <div id="topright">
 <ul>
-  <?php wp_list_pages('depth=1&title_li=0&sort_column=menu_order'); ?>
-  <?php wp_register(); ?>
-  <li><?php wp_loginout(); ?></li>
-  <?php wp_meta(); ?>
-  <li><a target="_blank_" href="http://shinworld.altervista.org/wordpress/?p=716">download UltraPixel</a></li>
-  <li><a href="#main">skip to content &darr;</a></li>
+<?php wp_list_pages('depth=1&title_li=0&sort_column=menu_order'); ?>
+<?php wp_register(); ?>
+<li><?php wp_loginout(); ?></li>
+<?php wp_meta(); ?>
+<li><a target="_blank_" href="http://shinworld.altervista.org/wordpress/?p=716">download UltraPixel</a></li>
+<li><a href="#main">skip to content &darr;</a></li>
 </ul>
+<p align="right"><?php include (TEMPLATEPATH . '/searchform.php'); ?></p>
 </div>
 <div class="cleared"></div>
 </div> <!-- Closes header -->
@@ -81,8 +82,8 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
 <div id="catnav">
 <div id="toprss"><a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/rss-trans.png" alt="<?php bloginfo('name'); ?>" width="65" height="24" /></a></div> <!-- Closes toprss -->
 <ul id="nav">
-  <li><a href="<?php echo get_option('home'); ?>">Home</a></li>
-  <?php wp_list_categories('sort_column=name&title_li=&depth=2'); ?>
+<li><a href="<?php echo get_option('home'); ?>">Home</a></li>
+<?php wp_list_categories('sort_column=name&title_li=&depth=2'); ?>
 </ul>
 </div> <!-- Closes catnav -->
 
