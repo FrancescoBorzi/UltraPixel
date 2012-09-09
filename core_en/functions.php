@@ -20,7 +20,8 @@ function editoptions() {
   <h2>Theme Options</h2>
   <form method="post" action="options.php">
   <?php wp_nonce_field('update-options') ?>
-  <p><strong>- Both welcome message andfootbar support HTML code.<br>- To disable the welcome message insert "disable" (in lowcase) as title.</strong></p>
+  <p><strong>- Both welcome message andfootbar support HTML code.</strong></p>
+  <p><input type="checkbox" <?php if(get_option('greeting') != "disable") {echo 'checked="checked"';} ?> id="switchwelcome" OnChange="if (this.checked == false) { document.getElementsByName('greeting')[0].value='disable'; }  else { if (document.getElementsByName('greeting')[0].value == 'disable'){document.getElementsByName('greeting')[0].value=''; } } document.getElementsByName('Submit')[0].click();"/> Enable Welcome Message</p>
   <p><strong>Title of welcome message:</strong></p>
   <p><input type="text" name="greeting" value="<?php echo get_option('greeting'); ?>" /></p>
   <p><strong>Welcome message:</strong></p>
