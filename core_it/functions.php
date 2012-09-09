@@ -20,7 +20,8 @@ function editoptions() {
   <h2>Theme Options</h2>
   <form method="post" action="options.php">
   <?php wp_nonce_field('update-options') ?>
-  <p><strong>Titolo del messaggio di benvenuto:<br>(scrivi "disable" tutto in minuscolo per disabilitare il messaggio di benvenuto)</strong></p>
+  <p><input type="checkbox" <?php if(get_option('greeting') != "disable") {echo 'checked="checked"';} ?> id="switchwelcome" OnChange="if (this.checked == false) { document.getElementsByName('greeting')[0].value='disable'; }  else { if (document.getElementsByName('greeting')[0].value == 'disable'){document.getElementsByName('greeting')[0].value=''; } } document.getElementsByName('Submit')[0].click();"/> Abilita messaggio di benvenuto</p>
+  <p><strong>Titolo del messaggio di benvenuto</strong></p>
   <p><input type="text" name="greeting" value="<?php echo get_option('greeting'); ?>" /></p>
   <p><strong>Messaggio di benvenuto:<br>
   (supporta anche il codice HTML)</strong></p>
