@@ -31,6 +31,8 @@ function editoptions() {
   <p><strong>Per favore inserisci qui sotto il nome del tuo feed FeedBurner: </strong></p>
   <p><input type="text" name="feedname" value="<?php echo get_option('feedname'); ?>" /></p>
   <p><input type="submit" name="Submit" value="Aggiorna Opzioni" /></p>
+  <hr style="color:blue;" />
+  <p><input type="button"  value="Editor Slider di Articoli" OnClick="javascript:window.open('<?php echo get_template_directory_uri(); ?>/slidereditor.php?templateurl=<?php echo get_template_directory_uri(); ?>');" style="border-color:blue;"/></p>
   <input type="hidden" name="action" value="update" />
   <input type="hidden" name="page_options" value="feedname,greeting,welcomemessage,footbar" />
   </form>

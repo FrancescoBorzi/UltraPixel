@@ -31,6 +31,8 @@ function editoptions() {
   <p><strong>Insert the name of your feed FeedBurner: </strong></p>
   <p><input type="text" name="feedname" value="<?php echo get_option('feedname'); ?>" /></p>
   <p><input type="submit" name="Submit" value="Update settings" /></p>
+  <hr style="color:blue;" />
+  <p><input type="button"  value="Slider Articles Editor" OnClick="javascript:window.open('<?php echo get_template_directory_uri(); ?>/slidereditor.php?templateurl=<?php echo get_template_directory_uri(); ?>');" style="border-color:blue;"/></p>
   <input type="hidden" name="action" value="update" />
   <input type="hidden" name="page_options" value="feedname,greeting,welcomemessage,footbar" />
   <p align="center">Theme UltraPixel coded by <a href="http://shinworld.altervista.org/"><strong>ShinDarth & Helias</strong></p>
