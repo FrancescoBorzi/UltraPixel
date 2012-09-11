@@ -72,7 +72,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
   <li><a target="_blank_" href="http://shinworld.altervista.org/wordpress/?p=716">download UltraPixel</a></li>
   <li><a href="#main">vai sotto &darr;</a></li>
 </ul>
-<p align="right"><?php include (TEMPLATEPATH . '/searchform.php'); ?></p>
+<?php include (TEMPLATEPATH . '/searchform.php'); ?>
 </div>
 <div class="cleared"></div>
 </div> <!-- Closes header -->
