@@ -21,7 +21,7 @@ Description: Combinazione colori $color1,$color2,white, interfaccia elegante con
 
 Author: Helias's Generator
 
-Version: 2.3.0
+Version: 2.4.0
 
 Tags: italian translations, $color1, white, $color2, two-columns, threaded-comments, fixed-width, theme-options, right-sidebar, footbar editable.
 
