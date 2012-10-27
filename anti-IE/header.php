@@ -40,7 +40,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
 
 
 <!--[if IE]>
-<META HTTP-EQUIV=”REFRESH” CONTENT=”0; URL=http://ultrapixel.altervista.org/ie.html'“>
+<META HTTP-EQUIV=”REFRESH” CONTENT=”0; URL=http://shinworld.altervista.org/ultrapixel/ie_it.html'“>
 <script language="JavaScript" type="text/javascript">
 window.onload = function()
 {
@@ -71,9 +71,10 @@ window.onload = function()
   <?php wp_register(); ?>
   <li><?php wp_loginout(); ?></li>
   <?php wp_meta(); ?>
-  <li><a target="_blank_" href="http://ultrapixel.altervista.org/">UltraPixel WebSite</a></li>
-  <li><a href="#main">skip to content &darr;</a></li>
+  <li><a target="_blank_" href="http://shinworld.altervista.org/wordpress/?p=716">download UltraPixel</a></li>
+  <li><a href="#main">vai sotto &darr;</a></li>
 </ul>
+<?php include (TEMPLATEPATH . '/searchform.php'); ?>
 </div>
 <div class="cleared"></div>
 </div> <!-- Closes header -->
