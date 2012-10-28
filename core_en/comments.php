@@ -124,7 +124,7 @@ if (function_exists('get_avatar')) {
 <?php if ('open' == $post->comment_status) : ?>
 <div class="cleared"></div>
 <div id="respond">
-<h3>Lascia un commento</h3>
+<h3>Comment</h3>
 <?php if (function_exists('cancel_comment_reply_link')) { 
 //2.7 comment loop code ?>
 <div id="cancel-comment-reply">
@@ -133,7 +133,7 @@ if (function_exists('get_avatar')) {
 <?php } ?>
  
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
-<p>Devi essere <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">loggato</a> per lasciare un commento.</p></div>
+<p>You must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">logged</a> to comment.</p></div>
 <?php else : ?>
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 
