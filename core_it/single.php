@@ -9,7 +9,7 @@
 
 <div class="topPost">
   <h2 class="topTitle"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-  <p class="topMeta">by <?php the_author_posts_link(); ?> on <?php the_time('M.d, Y') ?>, under <?php the_category(', '); ?></p>
+  <p class="topMeta">by <?php the_author_posts_link(); ?> il <?php the_time('M.d, Y') ?>, in <?php the_category(', '); ?></p>
   <div class="topContent"><?php the_content('(Continua a leggere...)'); ?></div>
   <div class="cleared"></div>
   <span class="linkpages"><?php wp_link_pages(); ?></span><div class="cleared"></div>
