@@ -127,7 +127,7 @@ a img {
 
 blockquote {
 
-  background: #ffffe5;
+  background: black;
 
   border: 1px solid #060606;
 
@@ -137,7 +137,7 @@ blockquote {
 
   font-style: bold;
 
-  color: #070707;
+  color: rgb(35,200,220);
 
   }
 
