@@ -6,7 +6,7 @@ if (function_exists('post_password_required'))
 	{
 	if ( post_password_required() ) 
 		{
-		echo '<p class="nocomments">Questo post è protetto da una password. Inserisci la password per visualizzare i commenti.</p>';
+		echo '<p class="nocomments">Questo post &egrave; protetto da una password. Inserisci la password per visualizzare i commenti.</p>';
 		return;
 		}
 	} else 
@@ -15,7 +15,7 @@ if (function_exists('post_password_required'))
 		{ // if there's a password
 			if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) 
 			{  // and it doesn't match the cookie  ?>
-				<p class="nocomments">Questo post è protetto da una password. Inserisci una password per visualizzare i commenti.</p>
+				<p class="nocomments">Questo post &egrave; protetto da una password. Inserisci una password per visualizzare i commenti.</p>
 				<?php return;
 			}
 		}
