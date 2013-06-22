@@ -1,12 +1,12 @@
 <?php // Do not delete these lines
 // thanks to Jeremy at http://clarktech.no-ip.com for the tips
 	if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
-		die ('Please do not load this page directly. Thanks!');
+		die ('Perfavore, non caricare direttamente questa pagina. Grazie!');
 if (function_exists('post_password_required')) 
 	{
 	if ( post_password_required() ) 
 		{
-		echo '<p class="nocomments">This post is password protected. Enter the password to view comments.</p>';
+		echo '<p class="nocomments">Questo post è protetto da una password. Inserisci la password per visualizzare i commenti.</p>';
 		return;
 		}
 	} else 
@@ -15,7 +15,7 @@ if (function_exists('post_password_required'))
 		{ // if there's a password
 			if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) 
 			{  // and it doesn't match the cookie  ?>
-				<p class="nocomments">This post is password protected. Enter the password to view comments.</p>
+				<p class="nocomments">Questo post è protetto da una password. Inserisci una password per visualizzare i commenti.</p>
 				<?php return;
 			}
 		}
@@ -52,7 +52,7 @@ if ( have_comments() ) : ?>
 <?php else : // this is displayed if there are no comments so far ?>
 	<?php if ('open' == $post->comment_status) :
 		// If comments are open, but there are no comments.
-	else : ?><p class="nocomments">Comments are closed.</p>
+	else : ?><p class="nocomments">Commenti disabilitati.</p>
 	<?php endif;
 endif;
 else:
@@ -63,7 +63,7 @@ else:
  
 <!-- You can start editing here. -->
 <?php if ($comments) : ?>
-	<h3 id="comments"><?php comments_number('No comments filed', 'One comment', '% comments' );?> to &#8220;<?php the_title(); ?>&#8221;</h3> 
+	<h3 id="comments"><?php comments_number('Non ci sono commenti', '1 commento', '% commenti' );?> to &#8220;<?php the_title(); ?>&#8221;</h3> 
 	<ol class="commentlist">
 	<?php foreach ( $comments as $comment ) : ?>
 		<li class="<?php echo $oddcomment; ?>" id="comment-<?php comment_ID() ?>">
@@ -86,10 +86,10 @@ if (function_exists('get_avatar')) {
 			<div class="commentbody">
 			<cite><?php comment_author_link() ?></cite> 
 			<?php if ($comment->comment_approved == '0') : ?>
-			<em>Your comment is awaiting moderation.</em>
+			<em>I tuoi commenti sono in attesa di approvazione</em>
 			<?php endif; ?>
 			<br />
-			<small class="commentmetadata"><a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> on <?php comment_time() ?></a> <?php edit_comment_link('edit','&nbsp;&nbsp;',''); ?></small>
+			<small class="commentmetadata"><a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> alle <?php comment_time() ?></a> <?php edit_comment_link('edit','&nbsp;&nbsp;',''); ?></small>
 
 			<?php comment_text() ?>
 			</div><div class="cleared"></div><!-- clears the floats so the backgrounds show all the way down -->
@@ -107,7 +107,7 @@ if (function_exists('get_avatar')) {
 		<!-- If comments are open, but there are no comments. -->
 	 <?php else : // comments are closed ?>
 		<!-- If comments are closed. -->
-	<p class="nocomments">Comments are closed.</p>
+	<p class="nocomments">Commenti disabilitati.</p>
 
 
 

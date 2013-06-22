@@ -52,10 +52,10 @@ function mytheme_comment($comment, $args, $depth) {
 			<div class="commentbody">
 			<cite><?php comment_author_link() ?></cite> 
 			<?php if ($comment->comment_approved == '0') : ?>
-			<em>Il tuo commento è in attesa di approvazione.</em>
+			<em>Il tuo commento &egrave; in attesa di approvazione.</em>
 			<?php endif; ?>
 			<br />
-			<small class="commentmetadata"><a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> on <?php comment_time() ?></a> <?php edit_comment_link('edit','&nbsp;&nbsp;',''); ?></small>
+			<small class="commentmetadata"><a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> alle <?php comment_time() ?></a> <?php edit_comment_link('edit','&nbsp;&nbsp;',''); ?></small>
 
 			<?php comment_text() ?>
 			</div><div class="cleared"></div>
@@ -76,10 +76,10 @@ function mytheme_ping($comment, $args, $depth) {
 			<div class="commentbody">
 			<cite><?php comment_author_link() ?></cite> 
 			<?php if ($comment->comment_approved == '0') : ?>
-			<em>Il tuo commento è in attesa di approvazione.</em>
+			<em>Il tuo commento &egrave; in attesa di approvazione.</em>
 			<?php endif; ?>
 			<br />
-			<small class="commentmetadata"><a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> on <?php comment_time() ?></a> <?php edit_comment_link('edit','&nbsp;&nbsp;',''); ?></small>
+			<small class="commentmetadata"><a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> alle <?php comment_time() ?></a> <?php edit_comment_link('edit','&nbsp;&nbsp;',''); ?></small>
 
 			<?php comment_text() ?>
 			</div>
