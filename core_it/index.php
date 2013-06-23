@@ -13,7 +13,7 @@
   <div class="topContent"><?php the_content('(Continua a leggere...)'); ?></div>
   <span class="topComments"><?php comments_popup_link('Lascia un commento', '1 Commento', '% Commenti'); ?></span>
   <span class="topTags"><?php the_tags('<em>:</em>', ', ', ''); ?></span>
-  <span class="topMore"><a href="<?php the_permalink() ?>">Vai all'articolo</a></span>
+  <span class="topMore"><a href="<?php the_permalink() ?>">Continua a leggere...</a></span>
 <div class="cleared"></div>
 </div> <!-- Closes topPost --><br/>
 
